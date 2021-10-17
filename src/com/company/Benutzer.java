@@ -43,6 +43,7 @@ public class Benutzer {
         this.sports = sports;
     }
 
+    //diese Methode kalkuliert die allgemeine Zeit der allen Sports, der in die Liste sind
     public double kalkuliereZeit(){
         double sum=0;
         for (Sport aux: sports)
@@ -50,6 +51,7 @@ public class Benutzer {
         return sum;
     }
 
+    //diese Methode kalkuliert die Zeit des Sports, den in die Liste ist
     public double kalkuliereZeit(Sport s){
         for (Sport aux: sports)
             if (aux == s)
@@ -57,7 +59,8 @@ public class Benutzer {
         return -1;
     }
 
-    public double kalkuliereZeitDurchsnittszeit(){
+    //diese Methode kalkuliert die Durchschnittszeit der allen Sports, der in die Liste sind
+    public double kalkuliereZeitDurchschnittszeit(){
         return kalkuliereZeit()/sports.size();
     }
 }
