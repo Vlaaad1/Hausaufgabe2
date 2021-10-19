@@ -11,7 +11,10 @@ public class Main {
     Hindernislauf hi = new Hindernislauf();
     Hochsprung ho = new Hochsprung();
     ArrayList<Sport> s = new ArrayList<Sport>();
-    s.add(bb); s.add(f); s.add(hi); s.add(ho);
+    s.add(bb);
+    s.add(f);
+    s.add(hi);
+    s.add(ho);
 	Benutzer b = new Benutzer("Lewis", "Hamilton", s);
     System.out.println("Allgemeine Zeit:");
     System.out.println(b.kalkuliereZeit());
@@ -25,7 +28,6 @@ public class Main {
     System.out.println(b.kalkuliereZeit(ho));
     System.out.println("Durchschnittszeit:");
     System.out.println(b.kalkuliereZeitDurchschnittszeit());
-
         System.out.println();
         System.out.println("Anderer Benutzer:");
     Basketball bb1 = new Basketball();

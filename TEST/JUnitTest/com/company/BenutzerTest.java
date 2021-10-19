@@ -1,13 +1,15 @@
 package com.company;
-
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
-
-
+/**
+ * @author Filip Vlad
+ * Date: 19.10.2021
+ * Classname: BenutzerTest
+ * Benutzen diese Klasse, um die Korektheit des Programms zu uberprufen
+ */
 class BenutzerTest {
-    //test fur die erste Methode
+    /*test fur die erste Methode*/
     @Test
     void kalkuliereZeit() {
         /*
@@ -25,7 +27,6 @@ class BenutzerTest {
         //erstellen einen neuen Benutzer
         Benutzer benutzer = new Benutzer("JJ","Addams", sports);
         assertEquals(170, benutzer.kalkuliereZeit());
-
         /*
          Fall 2, wenn die Liste mehrere Objekte selben Klasse hat
         */
@@ -39,7 +40,7 @@ class BenutzerTest {
         assertEquals(165, b2.kalkuliereZeit());
     }
 
-    //test fur die zweite Methode
+    /*test fur die zweite Methode*/
     @Test
     void testKalkuliereZeit() {
         Basketball basketball = new Basketball();
@@ -73,7 +74,7 @@ class BenutzerTest {
         assertEquals(-1, benutzer.kalkuliereZeit(hochsprung2));
     }
 
-    //test fur die dritte Methode
+    /*test fur die dritte Methode*/
     @Test
     void kalkuliereZeitDurchschnittszeit() {
         /*
@@ -91,7 +92,6 @@ class BenutzerTest {
         //erstellen einen neuen Benutzer
         Benutzer benutzer = new Benutzer("Johnny","Cage", sports);
         assertEquals((double)170/4, benutzer.kalkuliereZeitDurchschnittszeit());
-
         /*
          Fall 2, wenn die Liste mehrere Objekte selben Klasse hat
         */
