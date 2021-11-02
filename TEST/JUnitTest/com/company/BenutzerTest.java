@@ -9,7 +9,9 @@ import java.util.ArrayList;
  * Benutzen diese Klasse, um die Korektheit des Programms zu uberprufen
  */
 class BenutzerTest {
-    /*test fur die erste Methode*/
+    /**
+     * test fur die erste Methode: kalkuliereZeit()
+     */
     @Test
     void kalkuliereZeit() {
         /*
@@ -30,17 +32,22 @@ class BenutzerTest {
         /*
          Fall 2, wenn die Liste mehrere Objekte selben Klasse hat
         */
-        Basketball bb1 = new Basketball();
-        Basketball bb2 = new Basketball();
-        Basketball bb3 = new Basketball();
+        Basketball basketball1 = new Basketball();
+        Basketball basketball2 = new Basketball();
+        Basketball basketball3 = new Basketball();
         ArrayList<Sport> s2 = new ArrayList<Sport>();
-        s2.add(bb1); s2.add(bb2); s2.add(bb3);
+        s2.add(basketball1);
+        s2.add(basketball2);
+        s2.add(basketball3);
         //erstellen ein zweiter Benutzer
-        Benutzer b2 = new Benutzer("Chris", "Evans", s2);
-        assertEquals(165, b2.kalkuliereZeit());
+        Benutzer benutzer2 = new Benutzer("Chris", "Evans", s2);
+        assertEquals(165, benutzer.kalkuliereZeit());
     }
 
-    /*test fur die zweite Methode*/
+    /**
+     *
+     * Test fur die zweite Methode: testKalkuliereZeit()
+     */
     @Test
     void testKalkuliereZeit() {
         Basketball basketball = new Basketball();
@@ -74,7 +81,9 @@ class BenutzerTest {
         assertEquals(-1, benutzer.kalkuliereZeit(hochsprung2));
     }
 
-    /*test fur die dritte Methode*/
+    /**
+     * test fur die dritte Methode: kalkuliereZeitDurchschnittszeit()
+     */
     @Test
     void kalkuliereZeitDurchschnittszeit() {
         /*
@@ -95,13 +104,15 @@ class BenutzerTest {
         /*
          Fall 2, wenn die Liste mehrere Objekte selben Klasse hat
         */
-        Basketball bb1 = new Basketball();
-        Basketball bb2 = new Basketball();
-        Basketball bb3 = new Basketball();
+        Basketball basketball1 = new Basketball();
+        Basketball basketball2 = new Basketball();
+        Basketball basketball3 = new Basketball();
         ArrayList<Sport> s2 = new ArrayList<Sport>();
-        s2.add(bb1); s2.add(bb2); s2.add(bb3);
+        s2.add(basketball1);
+        s2.add(basketball2);
+        s2.add(basketball3);
         //erstellen ein zweiter Benutzer
-        Benutzer b2 = new Benutzer("Johnny", "Evans", s2);
-        assertEquals(55, b2.kalkuliereZeitDurchschnittszeit());
+        Benutzer benutzer2 = new Benutzer("Johnny", "Evans", s2);
+        assertEquals(55, benutzer2.kalkuliereZeitDurchschnittszeit());
     }
 }
